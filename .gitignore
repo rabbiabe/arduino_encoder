@@ -404,6 +404,6 @@ FodyWeavers.xsd
 
 
 .DS_Store
-/.pio
+.pio
 
-/.vscode
+.vscode
