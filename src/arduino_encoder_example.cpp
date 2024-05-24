@@ -84,7 +84,6 @@ void loop() {
   }
 
   delay(1000);
-  Serial.println("Hanging Out... ... ... ...");
   Serial.print("[Button has been held for ");
   Serial.print(encoder.getPressTime_ms());
   Serial.println(" ms]");
