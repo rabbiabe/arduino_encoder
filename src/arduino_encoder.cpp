@@ -23,6 +23,8 @@ ButtonState Rotary::buttonPress(bool pressed)
 
     if (pressed) {
         press_time = micros();
+        Serial.print("Button pressed at ");
+        Serial.println(press_time);
         long_press = false;
         returnValue = BTN_DOWN;
     } else {
@@ -80,6 +82,6 @@ uint32_t Rotary::getPressTime_ms()
     if (press_time == 0) {
        return 0;
     } else {
-       return ((millis() - press_time) / 1000);
+       return ((micros() - press_time) / 1000);
     }
 }
